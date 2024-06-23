@@ -1,0 +1,40 @@
+.chat-container {
+    width: 100%;
+    max-height: 400px; /* Adjust maximum height as needed */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
+    
+    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+    padding: 10px; /* Optional: Add padding inside the container */
+  }
+  
+  .messages-container {
+    display: flex;
+    flex-direction: column;
+     /* Align messages to the left */
+  }
+  
+  .message-container {
+    align-self: flex-start; /* Align each message container to the left */
+    margin-bottom: 10px; /* Adjust margin between messages */
+  }
+  
+  .message {
+    background-color: #f0f0f0; /* Background color of the message bubble */
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 70%; /* Limit maximum width of message bubble */
+    word-wrap: break-word; /* Wrap long words */
+  }
+  
+  .message-container-right {
+    align-self: flex-end;
+    
+  }
+
+  .message-color {
+    background-color: #FFBF00; /* Background color of the message bubble */
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 70%; /* Limit maximum width of message bubble */
+    word-wrap: break-word; /* Wrap long words */
+  }
