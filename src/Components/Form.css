@@ -1,0 +1,47 @@
+.form-container {
+    width: 60%; /* Adjust width as needed */
+    max-width: 400px; /* Max width for responsiveness */
+    background-color: #000000; /* Black background color */
+    border-radius: 24px; /* Border radius */
+    padding: 80px; /* Padding inside the container */
+    text-align: center; /* Center align text */
+    margin: auto; /* Center horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for depth */
+    transition: width 0.3s ease;
+  }
+  
+  .form-text {
+    color: #ffffff; /* White text color */
+    font-size: 2.2rem; /* Adjust font size as needed */
+    margin: 0; /* Remove default margin */
+    padding: 10px 0; /* Vertical padding for text */
+    
+  }
+  .dropdown-container {
+    width: 100%; /* Set width of dropdown container */
+    margin-top: 20px; /* Adjust margin top as needed */
+  }
+  
+  .MuiFormControl-root {
+    margin-top: 10px; /* Adjust spacing between elements */
+  }
+
+  .icon-container {
+    margin-bottom: 20px; /* Margin below the icon */
+  }
+
+  .toggle-container{
+    margin-bottom: 30px;
+    
+  }
+
+  .details-container {
+    border: 2px solid #ffffff; /* White border */
+    padding: 10px; /* Optional: Adjust padding as needed */
+    border-radius: 24px;
+  }
+
+  .form-container.expanded {
+    width: 90%; /* Double the width when expanded */
+    max-width: none; /* Allow width to expand beyond 400px */
+  }

@@ -1,0 +1,123 @@
+/* src/App.css */
+
+
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: Arial, sans-serif; /* Set default font family */
+  background-image: url('https://img.freepik.com/free-photo/audio-headset-used-by-call-center-agents-help-clients-telecommunication-with-technology-empty-customer-service-workstation-with-headphones-computers-modern-gadgets_482257-40834.jpg?size=626&ext=jpg&ga=GA1.1.2116175301.1718928000&semt=ais_user'); /* Replace with your background image path */
+  background-size: cover; /* Cover entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  height: 100vh; /* Set height to full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; Ensure relative positioning for pseudo-elements */
+}
+
+/* Pseudo-element for blur effect */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit; /* Inherit background image from body */
+  background-size: cover; /* Cover entire pseudo-element */
+  background-position: inherit; /* Inherit background position */
+  background-repeat: inherit; /* Inherit background repeat */
+  filter: blur(3px); /* Adjust blur intensity as needed */
+  z-index: -1; /* Behind all other content */
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  /* width: 125%; */
+  border-radius: 75px;
+  background-color: rgba(255, 255, 255, 0.5); 
+  font-family: Arial, sans-serif;
+}
+
+.App-header {
+  text-align: center;
+  color: #333; /* Dark gray text color */
+  padding: 60px;
+  max-width: 600px; /* Limit content width */
+}
+
+.App-header h1 {
+  font-size: 3rem; /* Large heading */
+  margin-bottom: 20px;
+}
+
+.App-header p {
+  font-size: 1.8rem; /* Medium paragraph text */
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* src/Typewriter.css */
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.typewriter-text {
+  overflow: hidden; /* Ensures the text doesn't overflow */
+  border-right: 1px solid black; /* Simulates the typing cursor */
+  white-space: nowrap; /* Keeps the text in one line */
+  animation: typewriter 2s steps(40, end), blink-caret 0.5s step-end infinite alternate;
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+
+/* GoogleAuthButton.css */
+
+.google-auth-button {
+  display: inline-block;
+  background-color: #ffffff; /* Button background color */
+  color: #757575; /* Text color */
+  border: 1px solid #dddddd; /* Border color */
+  padding: 10px 20px; /* Padding */
+  font-size: 16px; /* Font size */
+  font-family: Arial, sans-serif; /* Font family */
+  cursor: pointer; /* Cursor style */
+  border-radius: 12px; /* Border radius */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transition effect */
+}
+
+.google-auth-button:hover {
+  background-color: #f0f0f0; /* Hover background color */
+}
+
+.google-icon {
+  display: inline-block;
+  width: 20px; /* Icon width */
+  height: 20px; /* Icon height */
+  background-image: url('https://developers.google.com/identity/images/g-logo.png'); /* Google icon image */
+  background-size: cover;
+  vertical-align: middle;
+  margin-right: 10px; /* Margin between icon and text */
+}
+
+.button-text {
+  vertical-align: middle; /* Align text vertically with icon */
+}
